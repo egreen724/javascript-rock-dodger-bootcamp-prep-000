@@ -50,14 +50,14 @@ function createRock(x) {
   
 $("GAME").append(rock); 
    
-  function moveRock() {
+  function moveRock(rock) {
    if (checkCollision() === true) {
      return endGame()
    }
+    function step() {
+      rock.style.top = `${top += 2}px`
    
-   rock.style.top = `${top += 2}px`
-   
-    if (top < 400) {
+      if (top < 400) {
       window.requestAnimationFrame(moveRock);
     }
   }
