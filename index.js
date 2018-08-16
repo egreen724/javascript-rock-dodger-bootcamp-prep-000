@@ -54,7 +54,7 @@ $("GAME").append(rock);
    * seems like a good pace.)
    */
   function moveRock() {
-   x.style.top = `${top += 2} px`
+   x.style.top = `${top += 2} px`; 
    
    for (checkCollision()) = true 
    
