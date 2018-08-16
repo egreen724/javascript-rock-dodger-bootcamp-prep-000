@@ -56,7 +56,7 @@ $("GAME").append(rock);
   function moveRock() {
    x.style.top = `${top += 2} px`
    
-   if (checkCollision()) = true 
+   for (checkCollision()) = true 
    
     /**
      * If a rock collides with the DODGER,
