@@ -45,16 +45,9 @@ function createRock(x) {
   // Hmmm, why would we have used `var` here?
   var top = 0
 
-  rock.style.top = top
+  rock.style.top = top}
+  
 $("GAME").append(rock); 
-
-
-
-  /**
-   * Now that we have a rock, we'll need to append
-   * it to GAME and move it downwards.
-   */
-
 
   /**
    * This function moves the rock. (2 pixels at a time
