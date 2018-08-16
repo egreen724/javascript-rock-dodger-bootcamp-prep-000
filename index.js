@@ -45,19 +45,21 @@ function createRock(x) {
   // Hmmm, why would we have used `var` here?
   var top = 0
 
-  rock.style.top = top}
+  rock.style.top = top
+}
   
 $("GAME").append(rock); 
-
-  /**
-   * This function moves the rock. (2 pixels at a time
-   * seems like a good pace.)
-   */
+   
   function moveRock() {
-   x.style.top = `${top += 2} px`; 
+   rock.style.top = `${top += 2}px`
    
-   for (checkCollision()) = true 
-   
+    if (top < 400) {
+      window.requestAnimationFrame(moveRock);
+    }
+  }
+    window.requestAnimationFrame(moveRock);
+  }
+
     /**
      * If a rock collides with the DODGER,
      * we should call endGame()
