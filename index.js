@@ -51,6 +51,10 @@ function createRock(x) {
 $("GAME").append(rock); 
    
   function moveRock() {
+   if (checkCollision() === true) {
+     return endGame()
+   }
+   
    rock.style.top = `${top += 2}px`
    
     if (top < 400) {
